@@ -9,7 +9,7 @@ if(time < 12){
 }
 document.getElementById("demo").innerHTML = greet;
 
-const subtxt = ["Just Me","Be Yourself","Keep Smiling"];
+const subtxt = ["Just Me","Be Yourself","Keep Smiling","Living Life"];
 var i = Math.floor(4*Math.random());
 document.getElementById("randomtxt").innerHTML = subtxt[i];
 
