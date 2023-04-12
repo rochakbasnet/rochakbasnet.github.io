@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Rochak Basnet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Image/favicon.png">
+        <script src="https://kit.fontawesome.com/3e7b286a94.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/mainpagestyle.css">
+        <link rel="stylesheet" href="CSS/mobile.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    </head>
+    <body oncontextmenu="return false">
+        <!--Home Section-->
+        <div class="home" id="top">
+            <nav>
+                <h1 class="logo">ROCHAK <span>BASNET</span></h1>
+                <ul id="menu">
+                    <li><a href="#about" title="About Me">About Me</a>
+                    <li><a href="#journey" title="Journey">Journey</a>
+                    <li><a href="#contact" title="Contact">Contact</a>
+                </ul>
+            </nav>
+            <!--Mobile Home Section-->
+            <div class="mob">
+                <button id="mobmenu" onclick="mobFunction()">
+                <i class="fa-solid fa-angle-down"></i>
+                </button>
+            </div>
+            
+            <div class="info">
+                <h5>Good</h5>
+                <h2 id="demo"></h2>
+                <h3 id="randomtxt">It's me.</h3>
+            </div>
+
+            <div class="scroll">
+                <a href="#about" style="text-decoration: none;"> <span class="material-symbols-outlined">
+                    keyboard_double_arrow_down
+                </span>
+                <h4>Scroll Down</h4></a>
+            </div>
+        </div>
+        <div class="extra">
+        <!--About Me Section-->
+        <section class="about" id="about">
+            <h1 class="logo">ABOUT <span>ME</span></h1>
+            <div class="main">
+                <img class="aboutimg" src="Image/rochak.jpg" alt="Rochak Basnet">
+                <div class="abouttxt">
+                    <h2>ROCHAK BASNET</h2>
+                    <h3>STUDENT</h3>
+                    <div class="social">
+                    <a href="https://youtube.com/rochakbasnet" title="Youtube" target="_blank">
+                        <i class="fa-brands fa-youtube fa-xl"></i></a>
+                    <a href="https://instagram.com/rochak_basnet" title="Instagram" target="_blank">
+                        <i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="https://twitter.com/katycat_rochak" title="Twitter" target="_blank">
+                        <i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="https://snapchat.com/add/katycatrochak" title="Snpachat" target="_blank">
+                        <i class="fa-brands fa-snapchat fa-xl"></i></a>
+                    <a href="https://github.com/rochakbasnet" title="Github" target="_blank">
+                        <i class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+                    <P>Hi, I'm Rochak Basnet, a student, graphic designer, web developer, and filmmaker. 
+                        My expertise lies in UI/UX design and web development, and I also make videos on 
+                        Youtube and have designed websites for <a href="https://newskit.social/articles/khelxa" target="_blank">Khelxa</a>, 
+                        and <a href="https://www.lekhxa.com" target="_blank">Lekhxa</a>. In my free time, I enjoy 
+                        designing, making videos, cooking, dancing, and travelling. I'm an avid fan of Katy Perry 
+                        and love watching movies and series. I'm passionate about exploring new opportunities 
+                        to improve my craft and push boundaries in all aspects of my life.</P>
+                </div>
+            </div>
+        </section>
+        <hr id="work">
+
+        <!--Journey Section-->
+        <section class="journey" id="journey">
+            <h1 class="logo"><span>MY</span> JOURNEY</h1>
+            <p>Look at the timeline of my career in Videography, UI/UX design, and Graphics Design.</p>
+
+            <div class="card1">
+                <div class="player" onclick="on('popup')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/paper.png);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>First YouTube Video</h4>
+                </div>
+                 <hr>
+                 <h5>November 25, 2014</h5>
+            </div>
+            <div id="popup" class="front" onclick="off('popup',event)">
+                <div class="overlay">
+                    <h1>First YouTube Video: At the age of 10.</h1>
+                    <iframe src="https://www.youtube.com/embed/4cEVE31nVoA?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h5>Early-2015</h5>
+                <hr style="width: 40vw;">
+                <div class="player" onclick="on('popup1')"
+                 style="background-image: linear-gradient(to top, black, transparent ), url(Image/katy.jpg);">
+                    <i class="fa-solid fa-play fa-2xl"></i>
+                    <h4>Became Katycat</h4>
+                </div>
+            </div>
+            <div id="popup1" class="front" onclick="off('popup1',event)">
+                <div class="overlay">
+                    <h1>Became Katy Perry's fan after I heard Roar.</h1>
+                    <iframe src="https://www.youtube.com/embed/739LR8K9eF8?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="player" onclick="on('popup2')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/fyv.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>First Skit Video</h4>
+                </div>
+                 <hr>
+                 <h5>Beginning of 2015</h5>
+            </div>
+            <div id="popup2" class="front" onclick="off('popup2',event)">
+                <div class="overlay">
+                    <h1>Skit video with my friend Aarjan Tandukar.</h1>
+                    <video controls controlsList="nodownload" autoplay muted>
+                        <source src="Video/firstyoutube video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h5>January 10, 2016</h5>
+                <hr>
+                <div class="player" onclick="on('popup3')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/3mb.png);">
+                    <i class="fa-solid fa-play fa-2xl"></i>
+                    <h4>Start of Three Mad Boys</h4>
+                </div>
+            </div>
+            <div id="popup3" class="front" onclick="off('popup3',event)">
+                <div class="overlay">
+                    <h1>I created my first YouTube channel with two other individuals.</h1>
+                    <iframe src="https://www.youtube.com/embed/kfYYY6yz_2o?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="player" onclick="on('popup10')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/kn.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>Katycat Nepal Formation</h4>
+                </div>
+                 <hr style="width: 36vw;">
+                 <h5>March of 2016</h5>
+            </div>
+            <div id="popup10" class="front" onclick="off('popup10',event)">
+                <div class="overlay">
+                    <h1>Community for Nepali Katycat to meet.</h1>
+                    <iframe src="https://www.instagram.com/p/9OvOrlvRwe/embed"></iframe>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h5>October 8, 2016</h5>
+                <hr style="width: 35vw;">
+                <div class="player" onclick="on('popup11')"
+                 style="background-image: linear-gradient(to top, black, transparent ), url(Image/fv.jpg);">
+                    <i class="fa-solid fa-play fa-2xl"></i>
+                    <h4>First Vlog</h4>
+                </div>
+            </div>
+            <div id="popup11" class="front" onclick="off('popup11',event)">
+                <div class="overlay">
+                    <h1>I started vlogging at the age of 12.</h1>
+                    <iframe src="https://www.youtube.com/embed/XqvFayFeefg?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="player" onclick="on('popup4')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/tihar.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>First Tihar Vlog</h4>
+                </div>
+                 <hr>
+                 <h5>November 2, 2016</h5>
+            </div>
+            <div id="popup4" class="front" onclick="off('popup4',event)">
+                <div class="overlay">
+                    <h1>Tihar vlogs are essential part of my YouTube channel.</h1>
+                    <iframe src="https://www.youtube.com/embed/xuCfIx2g_uk?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h5>October 8, 2017</h5>
+                <hr>
+                <div class="player" onclick="on('popup5')"
+                 style="background-image: linear-gradient(to top, black, transparent ), url(Image/india.jpg);">
+                    <i class="fa-solid fa-play fa-2xl"></i>
+                    <h4>Trip to India</h4>
+                </div>
+            </div>
+            <div id="popup5" class="front" onclick="off('popup5',event)">
+                <div class="overlay">
+                    <h1>Me and my family went to <a href="https://www.youtube.com/watch?v=Cb5HuAF_M2E&list=PLMhZh-4ek9IC50K-wd6vaPKIbM8j7_5O5&pp=gAQB"
+                        target="_blank" title="See All my Dance Videos">India tour</a> for 2 weeks.</h1>
+                    <iframe src="https://www.youtube.com/embed/Cb5HuAF_M2E?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="player" onclick="on('popup6')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/tw17.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>Best Year: 2017</h4>
+                </div>
+                 <hr style="width: 38vw;">
+                 <h5>Full of 2017</h5>
+            </div>
+            <div id="popup6" class="front" onclick="off('popup6',event)">
+                <div class="overlay">
+                    <h1>Look back into <a href="https://www.youtube.com/watch?v=Xt0vxAYp4J4&list=PLMhZh-4ek9IB9DTNPQsbgnEKuSRil5PpH&pp=gAQB"
+                        target="_blank" title="See All my Dance Videos">2017</a>.</h1>
+                    <iframe src="https://www.youtube.com/embed/NXKHlBbhG-o?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h5>September 24, 2018</h5>
+                <hr style="width: 32.3vw;">
+                <div class="player" onclick="on('popup7')"
+                 style="background-image: linear-gradient(to top, black, transparent ), url(Image/dance.jpg);">
+                    <i class="fa-solid fa-play fa-2xl"></i>
+                    <h4>First Dance Video</h4>
+                </div>
+            </div>
+            <div id="popup7" class="front" onclick="off('popup7',event)">
+                <div class="overlay">
+                    <h1>I joined dance class for around <a href="https://www.youtube.com/watch?v=w1BPSIo-ays&list=PLMhZh-4ek9IChEYZw3II0xZJcRiu5wJ02"
+                        target="_blank" title="See All my Dance Videos">18 months</a>.</h1>
+                        <iframe src="https://geo.dailymotion.com/player/xdgu7.html?video=kzr3sfRQIwqH2dz0EYI"
+                        title="Dailymotion Video Player"></iframe>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="player" onclick="on('popup8')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/hv.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>Highest Viewed Youtube Video</h4>
+                </div>
+                 <hr style="width: 33vw;">
+                 <h5>November 13, 2018</h5>
+            </div>
+            <div id="popup8" class="front" onclick="off('popup8',event)">
+                <div class="overlay">
+                    <h1>This video has recieved over 12,000 views as of 2023.</h1>
+                    <iframe src="https://www.youtube.com/embed/IC9uUQpFoug?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            <div class="card2">
+                <h5>Full of 2018</h5>
+                <hr style="width: 38vw;">
+                <div class="player" onclick="on('popup9')"
+                 style="background-image: linear-gradient(to top, black, transparent ), url(Image/tw18.jpg);">
+                    <i class="fa-solid fa-play fa-2xl"></i>
+                    <h4>Best Year: 2018</h4>
+                </div>
+            </div>
+            <div id="popup9" class="front" onclick="off('popup9',event)">
+                <div class="overlay">
+                    <h1>Look back into <a href="https://www.youtube.com/watch?v=NXKHlBbhG-o&list=PLMhZh-4ek9IBXpZG1ClvgPCacwb9XlRZO&pp=gAQB"
+                        target="_blank" title="See All my Dance Videos">2018</a>.</h1>
+                    <iframe src="https://www.youtube.com/embed/F2QlVQb011E?controls=0" 
+                    title="YouTube video player"></iframe>
+                </div>
+            </div>
+
+            
+            <div class="card1">
+                <div class="player" onclick="on('popup12')" 
+                style="background-image: linear-gradient(to top, black, transparent ), url(Image/pokeman.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>Graphic Design Inception</h4>
+                </div>
+                 <hr>
+                 <h5>Beginning of 2019</h5>
+            </div>
+            <div id="popup12" class="front" onclick="off('popup12',event)">
+                <div class="overlay">
+                    <h1>First Vector <a href="https://drive.google.com/drive/folders/13J1jtV1wKqRR9-fCndk25w0XA1ugtC5h?usp=sharing"
+                        target="_blank" title="See More Illustrations">Illustration</a>.</h1>
+                    <img src="Image/1st Try.png" alt="firstvectorart" title="firstvectorart">
+                </div>
+            </div>
+
+            <div class="card2">
+                <h5>September 21, 2020</h5>
+                <hr style="width: 32.5vw;">
+                <div class="player" onclick="on('popup13')"
+                 style="background-image: linear-gradient(to top, black, transparent ), url(Image/rs.png);">
+                    <i class="fa-solid fa-play fa-2xl"></i>
+                    <h4>Launched Rising Artists</h4>
+                </div>
+            </div>
+            <div id="popup13" class="front" onclick="off('popup13',event)">
+                <div class="overlay">
+                    <h1>Platform to expose underrated artists.</h1>
+                    <iframe src="https://www.instagram.com/p/CgCmdjWNPTj/embed"></iframe>
+                </div>
+            </div>
+
+        <div class="card1">
+            <div class="player" onclick="on('popup14')" 
+            style="background-image: linear-gradient(to top, black, transparent ), url(Image/khelxa.png);">
+            <i class="fa-solid fa-play fa-2xl"></i>
+            <h4>First UI/UX Design: Khelxa</h4>
+            </div>
+             <hr style="width: 36.5vw;">
+             <h5>June 23, 2021</h5>
+        </div>
+        <div id="popup14" class="front" onclick="off('popup14',event)">
+            <div class="overlay">
+                <h1><a href="https://www.instagram.com/khelxa/"
+                    target="_blank" title="Follow Khelxa on Instagram">Khelxa</a> is a concept sports media house.</h1>
+                <iframe src="https://khelxa.000webhostapp.com/"></iframe>
+            </div>
+        </div>
+
+        <div class="card2">
+            <h5>May 14, 2022</h5>
+            <hr style="width: 37vw;">
+            <div class="player" onclick="on('popup15')"
+             style="background-image: linear-gradient(to top, black, transparent ), url(Image/fcd.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>First Choreographed Wedding Dance</h4>
+            </div>
+        </div>
+        <div id="popup15" class="front" onclick="off('popup15',event)">
+            <div class="overlay">
+                <h1>Me, my sister and brother performed <a href="https://youtu.be/w1BPSIo-ays"
+                    target="_blank" title="Watch full video on YouTube">dance</a> on mama's wedding.</h1>
+                    <video controls controlsList="nodownload" autoplay muted >
+                        <source src="Video/wdance.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="player" onclick="on('popup16')" 
+            style="background-image: linear-gradient(to top, black, transparent ), url(Image/khelxa2.png);">
+            <i class="fa-solid fa-play fa-2xl"></i>
+            <h4>Khelxa 2.0 UI/UX</h4>
+            </div>
+             <hr style="width: 38vw;">
+             <h5>July of 2022</h5>
+        </div>
+        <div id="popup16" class="front" onclick="off('popup16',event)">
+            <div class="overlay">
+                <h1>On one year anniversary, I designed second version of <a href="https://www.instagram.com/khelxa/"
+                    target="_blank" title="Follow Khelxa on Instagram">Khelxa</a>.</h1>
+                    <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYd87snGkYHvLBEGaoCTfq9%2FKHELXA%3Fnode-id%3D102-352%26scaling%3Dscale-down-width%26page-id%3D102%253A351%26starting-point-node-id%3D102%253A352" allowfullscreen></iframe>
+                </div>
+        </div>
+
+        <div class="card2">
+            <h5>October 30, 2022</h5>
+            <hr>
+            <div class="player" onclick="on('popup17')"
+             style="background-image: linear-gradient(to top, black, transparent ), url(Image/raw.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>First Raw Vlog</h4>
+            </div>
+        </div>
+        <div id="popup17" class="front" onclick="off('popup17',event)">
+            <div class="overlay">
+                <h1>This is the longest vlog which was shot at mamaghar.</h1>
+                <iframe src="https://www.youtube.com/embed/WfJHYSToL1w?controls=0" 
+                title="YouTube video player"></iframe>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="player" onclick="on('popup18')" 
+            style="background-image: linear-gradient(to top, black, transparent ), url(Image/distraction.jpg);">
+            <i class="fa-solid fa-play fa-2xl"></i>
+            <h4>A short film: Distraction</h4>
+            </div>
+             <hr>
+             <h5>November 25, 2022</h5>
+        </div>
+        <div id="popup18" class="front" onclick="off('popup18',event)">
+            <div class="overlay">
+                <h1>Made a <a href="https://youtu.be/iUJpfWMXj5k"
+                    target="_blank" title="Watch full movie">short film</a> with my friend <a href="https://www.instagram.com/narjala/"
+                    target="_blank" title="Follow him on Instagram">Aarjan Tandukar</a>.</h1>
+                    <video controls controlsList="nodownload" autoplay muted >
+                        <source src="Video/distraction.mp4" type="video/mp4">
+                    </video>
+          </div>
+        </div>
+
+        <div class="card2">
+            <h5>Feb 6 to March 20, 2023</h5>
+            <hr style="width: 30vw;">
+            <div class="player" onclick="on('popup19')"
+             style="background-image: linear-gradient(to top, black, transparent ), url(Image/ar.jpg);">
+                <i class="fa-solid fa-play fa-2xl"></i>
+                <h4>Sister's Wedding</h4>
+            </div>
+        </div>
+        <div id="popup19" class="front" onclick="off('popup19',event)">
+            <div class="overlay">
+                <h1>I made <a href="https://www.youtube.com/watch?v=T0Smo85fR-Y&list=PLMhZh-4ek9IDAjr8S2QJ6COvYJHuCWEdm"
+                    target="_blank" title="Watch full series">four part vlog series</a> on my sister's wedding.</h1>
+                <iframe src="https://www.youtube.com/embed/PGxRDvkWq_E?controls=0" 
+                title="YouTube video player"></iframe>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="player" onclick="on('popup20')" 
+            style="background-image: linear-gradient(to top, black, transparent ), url(Image/lekhxa.png);">
+            <i class="fa-solid fa-play fa-2xl"></i>
+            <h4>Lekhxa UI/UX design</h4>
+            </div>
+             <hr style="width: 37vw;" id="last">
+             <h5>April 14, 2023</h5>
+        </div>
+        <div id="popup20" class="front" onclick="off('popup20',event)">
+            <div class="overlay">
+                <h1><a href="https://www.instagram.com/lekhxa_official/"
+                    target="_blank" title="Follow him on Instagram">Lekhxa</a>
+                    is a multi topic blog website.</h1>
+                    <iframe src="https://www.lekhxa.com" 
+                    title="Lekhxa Website" style="background-color: white;"></iframe>
+          </div>
+        </div>
+    </section>
+    <hr id="work">
+
+        <!-- Contact Section-->  
+        <section class="contact" id="contact">
+            <h1 class="logo">CONTACT <span>ME</span></h1>
+            <div class="message">
+                <div class="maintwo">
+                <form autocomplete="on"action="https://formsubmit.co/2c4a44d419b6ab9ddbd76244370a606c" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Name" required><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                    <textarea name="message" placeholder="Your message..." required></textarea>
+                    <input type="submit" name="Submit">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://newskit.social/articles/rochak">
+                </form>
+                <img class="messageimg" src="Image/rochakcontact.jpg" alt="Rochak Basnet">
+            </div>
+            </div>
+        </section>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <h1 class="logo">ROCHAK <span>BASNET</span></h1>
+            <p>Kathmandu, Nepal</p>
+            <div class="social2">
+                <a href="https://youtube.com/rochakbasnet" title="Youtube" target="_blank">
+                    <i class="fa-brands fa-youtube fa-xl"></i></a>
+                <a href="https://instagram.com/rochak_basnet" title="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="https://twitter.com/katycat_rochak" title="Twitter" target="_blank">
+                    <i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a href="https://snapchat.com/add/katycatrochak" title="Snpachat" target="_blank">
+                    <i class="fa-brands fa-snapchat fa-xl"></i></a>
+                <a href="https://github.com/rochakbasnet" title="Github" target="_blank">
+                    <i class="fa-brands fa-github fa-xl"></i></a>
+            </div>
+            <br>
+            <p id="copy">©2023 Designed and coded by Rochak Basnet.</p>
+                <button id="btn" onclick="gotofunction()"><i class="fa-solid fa-arrow-up fa-2xl"></i></button>
+        </footer>
+        <script src="JS/more.js"></script>
+    </body>
+</html>
