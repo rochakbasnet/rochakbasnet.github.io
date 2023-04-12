@@ -1,0 +1,173 @@
+@media screen and (max-width:900px) and (max-height:1000px){
+    .logo{
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mob{
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu{
+        position: absolute;
+        top: 5.5rem;
+        left: 2rem;
+        white-space: nowrap;
+        background-color: rgba(18, 18, 18, 0.8);
+        border-radius: 5vw;
+        padding: 1vw 0 2vw 0;
+        border: 1px solid white;
+        display: none;
+    }
+
+    .mob button{
+        background: none;
+        border: none;
+    }
+
+    #menu a{font-size: 3.5vw;}
+
+    .info h5{
+        font-size: 8vw;
+        margin-bottom: -0.7em;
+        margin-left: 0em;
+    }
+
+    h2{font-size: 15vw;}
+
+    h3{
+        font-size: 4vw;
+        margin-left: 0.3em;
+        margin-top: -1em;
+    }
+
+    h4{font-size: 2.8vw;}
+
+    .scroll{
+        left: 43.5%;
+        bottom: 4vw;
+    }
+
+    .main{
+        flex-direction: column;
+        margin: 1.1rem;
+        border-radius: 6vw;
+    }
+
+    .about h1.logo{padding: 0.4rem;}
+
+    .aboutimg{
+        width: 80vw;
+        border-radius: 6vw 6vw 0 0;
+    }
+
+    .abouttxt{padding: 5vw 7vw;}
+
+    .abouttxt p{font-size: 3vw;}
+
+    .abouttxt h2{font-size: 5vw;}
+
+    .fa-xl {font-size: 0.7em;}
+
+    .social, .social2{margin: -9px 0px 10px;}
+
+    .social a, .social2 a{margin-right: -2px;}
+
+    .extra{padding: 0 1.5rem;}
+
+    .journey p{font-size: 3vw;}
+
+    .fa-2xl {font-size: 1em;}
+
+    .card1{
+        position: relative;
+        flex-direction: column-reverse;
+        line-height: 2rem;
+        margin: 1.5rem 0 0 0 ;
+    }
+
+    .card2{
+        position: relative;
+        flex-direction: column;
+        line-height: 1.5rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    .card1 hr, .card2 hr{
+    margin-bottom: -13rem;
+    position: absolute;
+    width: 61vw !important;
+    }
+
+    .player{
+        width: 61vw;
+        height: 34vw;
+    }
+
+    .player h4{font-size: 3vw;}
+
+    .front h1{font-size: 3vw;}
+
+    .card1 h5, .card2 h5{font-size: 2.8vw;}
+
+    #work{margin-top: 1.2rem;}
+
+    #last{display: none;}
+
+    .contact{min-height: 0;}
+
+    .maintwo{
+        border-radius: 2vw;
+        margin: 2rem 0;
+    }
+
+    .messageimg {display: none;}
+
+    form {
+        padding: 3vw 0;
+    }
+
+    form input[type="text"], input[type="email"] {
+        width: 90%;
+        margin: 0 4.4vw;
+        border-bottom: 0.1rem solid #1e1e1e;
+        padding-bottom: 0.25rem;
+        font-size: 2vw;
+    }
+
+    textarea{
+        width: 90%;
+        margin: 0 4.4vw;
+        border-bottom: 0.1rem solid #1e1e1e;
+        padding-top: 1.85rem;
+        font-size: 2vw;
+    }
+
+    form input:focus, textarea:focus {
+        border: 0.1rem solid #1E1E1E;
+        padding-left: 0.5rem;
+        font-size: 2vw;
+    }
+
+    form input[type="submit"] {
+        width: 30vw;
+        margin: 0rem 27vw;
+        font-size: 1.9vw;
+    }
+
+    ::placeholder{
+        font-size: 2vw;
+    }
+
+    footer{line-height: 4vw;}
+
+    footer h1.logo {font-size: 4.5vw;}
+
+    footer p {font-size: 3vw;}
+
+    .social2{margin-top: -0.2rem;}
+
+    footer #copy {font-size: 2.1vw;}
+}

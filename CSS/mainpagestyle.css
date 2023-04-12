@@ -1,0 +1,484 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root{
+    --black:#121212;
+    --gray: #D9D9D9;
+    --hover:#5D9B9B; 
+    --secondhover:#00eeff;
+}
+
+html{scroll-behavior: smooth;}
+
+body{
+    background-color: var(--black); 
+    user-select: none;
+}
+
+.home{
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18,0.5), rgba(18, 18, 18, 1)), url(/Image/jungle.jpg);
+    background-size: auto, cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.mob{display: none;}
+
+.logo{
+    font-size: 2.1vw;
+    font-weight:700 ;
+}
+
+span{font-weight: 300;}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+nav ul li a:hover{
+    color: var(--hover);
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.info h5{
+    font-size: 4.026vw;
+    margin-bottom: -0.9em;
+    margin-left: 0.1em;
+}
+
+h2{
+    font-size: 8.785vw;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 1.537vw;
+    font-weight: 500;
+    text-decoration: 1px underline solid;
+    margin-left: 0.45em;
+    margin-top: -1.5em;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 2vw;
+    left: 46.5%;
+    text-align: center;
+    line-height:1vw;
+    transition: 0.3s;
+}
+
+.material-symbols-outlined{animation: bounce 2s infinite 2s;}
+
+@keyframes bounce {
+    0%{-webkit-transform: translateY(0px);}
+    50%{-webkit-transform: translateY(-13px);}
+    100%{-webkit-transform: translateY(0px);}
+}
+
+h4{
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about h1.logo{
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.aboutimg{
+    height: auto;
+    width: 31vw;
+    border-radius: 2.1vw 0px 0px 2.1vw;
+    border: 5px solid #1E1E1E;
+}
+
+.abouttxt{
+    padding: 0 5vw;
+}
+
+.main{
+    width: fit-content;
+    margin: -0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1E1E1E;
+    border-radius: 2.1vw;
+}
+
+.abouttxt h2{
+    font-size: 3vw;
+    color: var(--gray);
+}
+
+.abouttxt h3{
+    color: var(--gray);
+    text-decoration: none;
+    margin-top: -5px;
+    margin-left: 0px;
+}
+
+.social, .social2{
+    margin: 4px 0px 20px;
+}
+
+.abouttxt i{
+    color: var(--gray);    
+}
+
+.abouttxt i:hover{
+    color: var(--hover);    
+}
+
+
+.abouttxt p{
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: justify;
+    color: var(--gray);
+}
+
+.abouttxt p a{
+     color: #ffffff;
+}
+
+.abouttxt p a:hover{color: var(--hover);}
+
+.extra{
+    width: 100%; 
+    padding: 0 6rem;
+}
+
+#work{
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px none;
+    height: 1px;
+    background-color: white;
+}
+
+.journey h1.logo{
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.journey p{
+    font-size: 1.4vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card1{
+    margin: 4em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.player{
+    width: 35vw;
+    height: 20vw;
+    position: relative;
+    border-radius: 1.5vw;
+    border: 1px solid #ffffff;
+    background-size: cover;
+}
+
+.player i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player:hover i, .player:hover h4{
+color: var(--hover);
+}
+
+.player:hover{
+    box-shadow: 0px 0px 20px 0px var(--hover);
+    cursor: pointer;
+    border-color: var(--hover);
+}
+
+.player h4{
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.card1 hr{
+    width: 34vw;
+    height: 0.5px;
+    border: 0px none;
+    background-color: white;
+}
+
+.card1 h5, .card2 h5{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+.front{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(30, 30, 30, 0.8);
+    z-index: 2;
+    display:none ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body.front-active{
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.front iframe, .front video, .front img{
+    width: 70.2vw;
+    height: 39.7vw;
+    border-radius: 0 0 2.1vw 2.1vw;
+    border: 3px solid var(--hover);
+    background-color: var(--black);
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+}
+
+.front h1{
+    font-size: 1.6vw;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--hover);
+    width: 70.2vw;
+    border-radius:2.1vw 2.1vw 0 0;
+    padding: 5px;
+}
+
+.front h1 a{
+    color: var(--secondhover);
+    font-weight: 800;
+}
+
+.front h1 a:hover{
+    color: var(--black);
+    font-weight: 800;
+}
+
+.card2{
+    margin: 4em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.card2 hr{
+    width: 35vw;
+    height: 0.5px;
+    border: 0px none;
+    background-color: white;
+    padding: 0px 10px;
+}
+
+.contact{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact h1.logo{
+    padding-top: 1.7em;
+    text-align: center;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+}
+
+.maintwo{
+    display: flex;
+    align-items: center;
+    margin: 3.75rem 0px;
+    width: fit-content;
+    background-color: var(--gray);
+    border-radius: 0.7vw;
+}
+
+.messageimg{
+    width: 30.1vw;
+    height: auto;
+    border-radius: 0px 0.7vw 0.7vw 0px;
+}
+
+form{
+    padding: 0 5.6vw;
+}
+
+form input[type="text"], input[type="email"] {
+    width: 44vw;
+    background-color:transparent;
+    border: none;
+    border-bottom: 0.125rem solid #1E1E1E;
+    outline: none;
+    padding-top: 1.25rem;
+    padding-bottom: 0.3rem;
+    margin: 0.3rem auto;
+    color: #1E1E1E;
+    font-size: 1vw;
+}
+
+textarea{
+    width: 44vw;
+    height: 11vw;
+    background-color: transparent;
+    color: #1E1E1E;
+    resize: none;
+    border: none;
+    border-bottom: 0.125rem solid #1E1E1E;
+    outline: none;
+    padding-top: 1.25rem;
+    font-size: 1vw;
+}
+
+form input[type="submit"]{
+    width: 44vw;
+    border: none;
+    outline: none;
+    margin: 0.3rem auto;
+    background-color: #1E1E1E;
+    border-radius: 0.7vw;
+    font-size: 1.4vw;
+    height: 3.6vw;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #1E1E1E;
+    font-weight: 500;
+    border: 0.063rem solid #1E1E1E;
+}
+
+::placeholder{
+    color: #1E1E1E;
+    font-size: 1vw;
+}
+
+form input:focus, textarea:focus{
+    border: 0.125rem solid #1E1E1E;
+    padding-left: 0.5rem;
+    font-size: 1vw;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0.7)), url(/Image/jungle.jpg);
+    background-position: 0% 50%;
+    line-height: 2.1vw;
+}
+
+footer h1.logo{
+    font-size: 2.5vw;
+}
+
+footer p{
+    font-size: 1.4vw;
+    font-weight: 300;
+}
+
+footer #copy{
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+footer .social2 a i:hover{
+    color: var(--hover);
+}
+
+#btn{
+    right: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    transition: 0.2s;
+}
+
+#btn i{color: var(--gray);}
+#btn i:hover{color: var(--hover);}
+
+
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: var(--hover);
+}
+
